@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page acceuil</title>
     <link rel="stylesheet" href="Messtyle.css" type="text/css">
+    <script src="script.js"></script>
     
 </head>
-<body >
+<body onload="charger()">
+    
     <header>
         <img src="logo.png" alt="">
         <h1> Votre identite numerique sur mobile</h1>
@@ -25,10 +27,12 @@
     <aside>
         <video src="hawiya.mp4" class="vf" controls onplay="lecture()" id="vid" onpause="PauseVideo()"></video>
     </aside>
-    <footer>-
+    <footer>
+        <script>
+        </script>
         <p class="pa" id="pa" > Copyright <span id="an">annee actuelle</span>-User:<span id="ps"></span></p>
-        <adress class="pa">: <img src="localisation.png" alt="">15 Rue des Martyres</adress>
+        <adress class="pa" style="display: block;"><img src="localisation.png" alt="">15 Rue des Martyres</adress>
     </footer>
-    <script src="script.js"></script>
+    
 </body>
 </html>

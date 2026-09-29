@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Messtyle2.css">
+</head>
+<body>
+    <form action="post">
+        <fieldset>
+            <legend>S'inscrire</legend>
+            
+                <div class="nc">
+                    <label for="">Numero Cin</label>
+                    <input type="text" name="" id="" required class="inp" onfocus="">
+                
+                </div>
+                <div class="np">
+                    <label for=""> Nom et Prenom</label>
+                    <input type="text" name="" id="" required class="inp">
+                </div>
+                <div class="ae">
+                    <label for=""> Adresse Email</label>
+                    <input type="email" name="" id="emaill" required placeholder="UserName@domaine.suffixe" class="inp" onblur="get_email()">
+                
+                </div>
+                <div class="dn">
+                    <label for="">Date De naissance</label>
+                    <input type="date" name="" id="" class="inp">
+                </div>
+                <div class="np">
+                    <label for="">Nombre de personnes charge</label>
+                    <input type="number" name="" id="" value="0" class="inp">
+                </div>
+                <div class="mcp">
+                
+                    <label for="">Mode de connexion prefere</label>
+                    <select name="" id="">
+                        <option value="">
+                             Choisir un mode 
+                        </option>
+                        <option value="" id="ed">
+                             Empreinte digitale (10)
+                        </option>
+                        <option value="" id="rc">
+                            Reconnaissance faciale (15)
+                        </option>
+                        <option value="" id="cp">
+                             Code PIN (8)
+                        </option>
+                    </select>
+                </div>
+                <div class="p">
+                
+                    <label for="">Profession</label>
+                    <input type="text" id="p" list="pro">
+                        <datalist id="pro">
+                        <option value="Enseignant"></option>
+                        <option value="Medecin"></option>
+                        <option value="Ingenieur"></option>
+                        <option value="Commerant"></option>
+                    </datalist>
+                </div>
+                <div class="g">
+                
+                    <label for="">Genre</label>
+                    <input type="radio" name="r" id=""><img src="masculin.png" alt=""><input type="radio" name="r" id=""><img src="femme.png" alt="">
+                </div>
+                <div class="nmn">
+                
+                    <label for="">Niveau de matrise numerique</label>
+                    <input type="range" name="" id="" min="2" max="100" value="50" class="inp">
+                </div>
+                <div classe="s">   
+                 
+                    <label for="">Services</label>
+                    <input type="checkbox" name="" id="">Administratifs 
+                    <input type="checkbox" name="" id="">En ligne 
+                    <input type="checkbox" name="" id="">Technique 
+                </div>
+                <div class="tp">
+            
+                <label for="">Total Paymend</label></td>
+                <input type="text" name="" id="" readonly class="inp"><label for="">Dt</label>
+                </div>
+                
+                <div class="m">
+                    <label for="">Message</label></td>
+                    <textarea name="" id="" cols="30" rows="5" >Taper votre message ici</textarea>
+                </div>
+                <div class="c">
+                    <label for="">Captcha</label>
+                    <input type="text" name="" id="" readonly class="inp">
+                </div>
+                <div class="r">
+                <label for="">Reponse</label>
+                <input type="text" name="" id="" class="inp">
+               </div> 
+                <div class="btnn">
+                <button type="submit" disabled>S'inscrire</button>
+                <button type="reset">Reinitialiser</button>
+                 </div>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -116,7 +116,9 @@ footer{
     text-align: center;
 }
 .pa{
-    list-style-image: url('puce.png');
+    margin: 0 auto;
+    width: 20%;
+    background-image: url('puce.png');
     background-repeat: no-repeat;
     color: darkgoldenrod;
     font-family: fantasy;
@@ -125,19 +127,19 @@ footer{
 }
 .pa:hover{
     transform: scale(2);
-    opacity: -0.5;
+    opacity: 0.5;
 }
 /* presentation.html*/
 
-.description{
-    margin: 8px;
+#description{
+    padding: 8px;
     width: 80%;
     height: 500px;
-    box-shadow: 5px 5px 10px violet inset ;
+    box-shadow: 5px 5px 10px purple inset ;
     overflow: auto;
 }
-#a,.h1{
-    text-decoration: dotted;
+#a,#h1{
+    text-decoration: overline dashed;
     color: darkblue;
     text-transform: capitalize;
 
@@ -165,10 +167,10 @@ summary{
     color: #23ae4d;
 }
 .inf_td{
-    margin: 12px;
+    padding: 12px;
     text-align: left;
     transition-property: all;
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
     transition-duration: 0.5s;
     border: 1px solid #ddd ;
 
@@ -193,6 +195,7 @@ label{
 .inp{
     width: 220px;
 }
-.inp:hover{
+.inp:focus{
     background-color: rgb(26, 193, 215);
 }
+

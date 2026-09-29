@@ -21,14 +21,14 @@
                 </tr>
                 <tr>
                     <td><label for=""> Adresse Email</label></td>
-                    <td><input type="email" name="" id="email" required placeholder="UserName@domaine.suffixe" class="inp" onblur="charger()"></td>
+                    <td><input type="email" name="" id="emaill" required placeholder="UserName@domaine.suffixe" class="inp" onblur="get_email()"></td>
                 </tr>
                 <tr>
                     <td><label for="">Date De naissance</label></td>
                     <td><input type="date" name="" id="" class="inp"></td>
                 </tr>
                 <tr>
-                    <td><label for="">Nombre de personnes charg</label></td>
+                    <td><label for="">Nombre de personnes charge</label></td>
                     <td><input type="number" name="" id="" value="0" class="inp"></td>
                 </tr>
                 <tr>
@@ -37,13 +37,13 @@
                         <option value="">
                              Choisir un mode 
                         </option>
-                        <option value="">
+                        <option value="" id="ed">
                              Empreinte digitale (10)
                         </option>
-                        <option value="">
+                        <option value="" id="rc">
                             Reconnaissance faciale (15)
                         </option>
-                        <option value="">
+                        <option value="" id="cp">
                              Code PIN (8)
                         </option>
                     </select></td>
@@ -55,7 +55,7 @@
                         <option value="Enseignant"></option>
                         <option value="Medecin"></option>
                         <option value="Ingenieur"></option>
-                        <option value="Commerant"></option>
+                        <option value="Commercant"></option>
                     </datalist></td>
                 </tr>
                 <tr>

@@ -1,0 +1,18 @@
+/*inscription2*/
+form{
+    width: 600px;
+}
+label{
+    width: 180px;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+}
+input{
+    width: 220px;
+}
+input:focus{
+    background-color: rgb(26, 193, 215);
+}
