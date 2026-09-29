@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page acceuil</title>
+    <link rel="stylesheet" href="Messtyle.css" type="text/css">
+    
+</head>
+<body >
+    <header>
+        <img src="logo.png" alt="">
+        <h1> Votre identite numerique sur mobile</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="presentation.html" target="frame">Qui sommes-nous</a></li>
+            <li><a href="Inscription.html" target="frame">Inscription</a></li>
+            <li><a href="https://e-bawaba.tn" target="frame">Pour en savoir plus</a></li>
+        </ul>
+    </nav>
+    <section>
+        <iframe src="presentation.html" frameborder="0" name="frame" class="vf"></iframe>
+    </section>
+    <aside>
+        <video src="hawiya.mp4" class="vf" controls onplay="lecture()" id="vid" onpause="PauseVideo()"></video>
+    </aside>
+    <footer>-
+        <p class="pa" id="pa" > Copyright <span id="an">annee actuelle</span>-User:<span id="ps"></span></p>
+        <adress class="pa">: <img src="localisation.png" alt="">15 Rue des Martyres</adress>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="Messtyle.css">
+</head>
+<body>
+    <form action="post">
+        <fieldset>
+            <legend>S'inscrire</legend>
+            <table>
+                <tr>
+                    <td><label for="">Numero Cin</label></td>
+                    <td><input type="text" name="" id="" required class="inp" onfocus=""></td>
+                </tr>
+                <tr>
+                    <td><label for=""> Nom et Prenom</label></td>
+                    <td><input type="text" name="" id="" required class="inp"></td>
+                </tr>
+                <tr>
+                    <td><label for=""> Adresse Email</label></td>
+                    <td><input type="email" name="" id="email" required placeholder="UserName@domaine.suffixe" class="inp" onblur="charger()"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Date De naissance</label></td>
+                    <td><input type="date" name="" id="" class="inp"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Nombre de personnes charg</label></td>
+                    <td><input type="number" name="" id="" value="0" class="inp"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Mode de connexion prefere</label></td>
+                    <td><select name="" id="">
+                        <option value="">
+                             Choisir un mode 
+                        </option>
+                        <option value="">
+                             Empreinte digitale (10)
+                        </option>
+                        <option value="">
+                            Reconnaissance faciale (15)
+                        </option>
+                        <option value="">
+                             Code PIN (8)
+                        </option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="">Profession</label></td>
+                    <td><input type="text" id="p" list="pro">
+                        <datalist id="pro">
+                        <option value="Enseignant"></option>
+                        <option value="Medecin"></option>
+                        <option value="Ingenieur"></option>
+                        <option value="Commerant"></option>
+                    </datalist></td>
+                </tr>
+                <tr>
+                    <td><label for="">Genre</label></td>
+                    <td><input type="radio" name="r" id=""><img src="masculin.png" alt=""><input type="radio" name="r" id=""><img src="femme.png" alt=""></td>
+                    
+                </tr>
+                <tr>
+                    <td><label for="">Niveau de matrise numerique</label></td>
+                    <td><input type="range" name="" id="" min="2" max="100" value="50" class="inp"></td>
+                </tr>
+                 <tr>
+                    <td><label for="">Services</label></td>
+                    <td><input type="checkbox" name="" id="">Administratifs </td>
+                    <td><input type="checkbox" name="" id="">En ligne </td>
+                    <td><input type="checkbox" name="" id="">Technique </td>
+                </tr>
+                <tr>
+                    <td><label for="">Total Paymend</label></td>
+                    <td><input type="text" name="" id="" readonly class="inp"><label for="">Dt</label></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="">Message</label></td>
+                    <td><textarea name="" id="" cols="30" rows="5" >Taper votre message ici</textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="">Captcha</label></td>
+                    <td><input type="text" name="" id="" readonly class="inp"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Reponse</label></td>
+                    <td><input type="text" name="" id="" class="inp"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" disabled>S'inscrire</button></td>
+                    <td><button type="reset">Reinitialiser</button></td>
+                </tr>
+            </table>
+            
+            
+            
+            
+            
+            
+            
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
