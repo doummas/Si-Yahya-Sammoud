@@ -6,7 +6,7 @@
     <title>Inscription</title>
     <link rel="stylesheet" href="Messtyle.css">
 </head>
-<body>
+<body id="in_body">
     <form action="post">
         <fieldset>
             <legend>S'inscrire</legend>
@@ -33,17 +33,17 @@
                 </tr>
                 <tr>
                     <td><label for="">Mode de connexion prefere</label></td>
-                    <td><select name="" id="">
+                    <td><select name="tab" id="" onchange="changer_image() ; calculer()">
                         <option value="">
                              Choisir un mode 
                         </option>
-                        <option value="" id="ed">
+                        <option value="10" id="ed" >
                              Empreinte digitale (10)
                         </option>
-                        <option value="" id="rc">
+                        <option value="15" id="rc" >
                             Reconnaissance faciale (15)
                         </option>
-                        <option value="" id="cp">
+                        <option value="8" id="cp" >
                              Code PIN (8)
                         </option>
                     </select></td>
@@ -65,17 +65,17 @@
                 </tr>
                 <tr>
                     <td><label for="">Niveau de matrise numerique</label></td>
-                    <td><input type="range" name="" id="" min="2" max="100" value="50" class="inp"></td>
+                    <td><input type="range" name="" id="range" min="2" max="100" value="50" class="inp" onchange="afficher()"><output id="out">1</output></td>
                 </tr>
                  <tr>
                     <td><label for="">Services</label></td>
-                    <td><input type="checkbox" name="" id="">Administratifs </td>
-                    <td><input type="checkbox" name="" id="">En ligne </td>
-                    <td><input type="checkbox" name="" id="">Technique </td>
+                    <td><input type="checkbox" name="a" id="" value="15">Administratifs (15) </td>
+                    <td><input type="checkbox" name="a" id="" value="25">En ligne (25) </td>
+                    <td><input type="checkbox" name="a" id="" value="10">Technique (10) </td>
                 </tr>
                 <tr>
                     <td><label for="">Total Paymend</label></td>
-                    <td><input type="text" name="" id="" readonly class="inp"><label for="">Dt</label></td>
+                    <td><input type="text" name="" id="total" readonly class="inp"><label for="">Dt</label></td>
                 </tr>
                 
                 <tr>
@@ -95,8 +95,6 @@
                     <td><button type="reset">Reinitialiser</button></td>
                 </tr>
             </table>
-            
-            
             
             
             
