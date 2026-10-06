@@ -6,10 +6,11 @@ def saisir():
         n=int(input("Donner N autre fois\n"))
         
 def remplir(n):
-    global reel
     reel=open("C:/4Si/nombres.fch","wb")
     for i in range(n):
         val=float(input("donner reel\n"))
+        while val<0:
+            val=float(input("donner reel\n"))
         dump(val, reel)
     reel.close()
         

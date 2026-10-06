@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body onload="saisir();afficher(saisir())">
+    <h1>Bienvenue <span id="nom"></span>: Debuter en javascrip</h1>
+    <p1>Lorem  <span id="s">ipsum</span> dolor sit amet consectetur adipisicing elit. Quasi laudantium nostrum est laborum autem nesciunt aspernatur eligendi architecto consequuntur, doloribus obcaecati voluptas ea impedit fugiat odio eum aperiam, non et!</p1>
+
+    <script>
+        function saisir(){
+            return prompt("Donner le nom")
+        }
+        function afficher(nom){
+            document.getElementById("nom").innerHTML = nom        }
+        
+        
+    </script>
+</body>
+</html>
