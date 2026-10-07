@@ -26,11 +26,13 @@ function charger(){
 
 function lecture(){
     document.getElementById("vid").style.border = "solid 5px green "
-    alert("Video en cours de lecture")
+    document.getElementById("lp").innerHTML = "video en cour"
+    document.getElementById("lp").style.color = "green"
 }
 function PauseVideo(){
     document.getElementById("vid").style.border = "solid 5px red "
-    alert("Video en pause")
+    document.getElementById("lp").innerHTML = "video en pause"
+    document.getElementById("lp").style.color = "red"
 }
 
 

@@ -14,7 +14,7 @@ def remplir(n):
         dump(val, reel)
     reel.close()
         
-def afficher(n,reel):
+def afficher(n):
     reel=open("C:/4Si/nombres.fch","rb")
     t=0
     for i in range(n):
@@ -26,5 +26,5 @@ def afficher(n,reel):
         
 saisir()
 remplir(n)
-afficher(n,reel)
+afficher(n)
     
