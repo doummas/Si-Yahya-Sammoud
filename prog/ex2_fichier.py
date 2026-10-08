@@ -12,23 +12,23 @@ def remplir():
                 e["genre"] = input("Donner le genre autre fois\n")
             e["nom"] = input("Donner le nom d'eleve\n")
             e["note"]=dict()
-            e["note"]["note1"] = int(input("Donner le note\n"))
+            e["note"]["note1"] = float(input("Donner le note\n"))
             while (e["note"]["note1"]>21 or e["note"]["note1"]<=0):
-                e["note"]["note1"] = int(input("Donner le note\n"))
-            e["note"]["note2"] = int(input("Donner le note\n"))
+                e["note"]["note1"] = float(input("Donner le note\n"))
+            e["note"]["note2"] = float(input("Donner le note\n"))
             while (e["note"]["note2"]>21 or e["note"]["note2"]<=0):
-                e["note"]["note2"] = int(input("Donner le note\n"))
+                e["note"]["note2"] = float(input("Donner le note\n"))
                 
-            e["note"]["note3"] = int(input("Donner le note\n"))
+            e["note"]["note3"] = float(input("Donner le note\n"))
             while (e["note"]["note3"]>21 or e["note"]["note3"]<=0):
-                e["note"]["note3"] = int(input("Donner le note\n"))
+                e["note"]["note3"] = float(input("Donner le note\n"))
             e["moyen"] = (e["note"]["note1"] +e["note"]["note2"] +e["note"]["note3"]) /3
             
-            
+            dump(e,eleve)
             n=input("continuez (O/N?)")
             while (n!= "O" and n!="N"):
                 n=input("continuez (O/N?)")
-            dump(e,eleve)
+            
     eleve.close()
 def afficher():
     eleve = open("C:/4Si/eleve.dat","rb")
@@ -40,9 +40,10 @@ def afficher():
         try:
             r= load(eleve)
             print("Eleve ",i)
-            print(r["nom"])
+            
             if r["moyen"] > 10:
                 print("admis\n")
+                print(r["nom"])
             if r["moyen"]>mm:
                 mm=r["moyen"]
                 nom=r["nom"]
@@ -50,8 +51,8 @@ def afficher():
         
         except:
             fin = True
-            print(mm)
-            print(nom)
+    print(mm)
+    print(nom)
     eleve.close()
         
 

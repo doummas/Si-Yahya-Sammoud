@@ -95,26 +95,26 @@ function valider(){
     let ch2 = email.substring(email.indexOf('@')+1,email.lastIndexOf("."))
     let ch3 = email.substring(email.lastIndexOf(".")+1,email.length) 
     console.log(ch1+ch2+ch3)
-    if (email.length >20 || email.length<3 || !lettre(ch1)|| !lettre(ch2) || !lettre(ch3) || ch2!="gmail" || ch2!="yahoo") {
+    if (email.length >20 || email.length<3 || !lettre(ch1)|| !lettre(ch2) || !lettre(ch3) || ch2!="gmail" && ch2!="yahoo") {
         alert("email est Incorrect")
     }
 
 
     let da = document.getElementById("d").value
-    if (da<= "13/09/2008"){
+    if (da<= "2008-09-13"){
         alert("Date est Incorrect")
     }
-    if (document.getElementById("select") == "Choisir un mode"){
+    if (document.getElementById("select").value == "Choisir un mode"){
         alert("select est vide")
     }
-    if (document.getElementById("p") == ""){
+    if (document.getElementById("p").value == ""){
         alert("Profession est vide")
     }
-    if(!document.getElementById("ff").checked || !document.getElementById("mm").checked ){
+    if(!document.getElementById("ff").checked && !document.getElementById("mm").checked ){
         alert("Choisir un genre")
     }
 }
-function lettre(email){
+function lettre(ch){
     let i = 0
     while(i<ch.length && ((ch[i].toUpperCase()>="A" && ch[i].toUpperCase()<="Z"))){
         i++
