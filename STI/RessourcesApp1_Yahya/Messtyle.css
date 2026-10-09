@@ -3,6 +3,9 @@ header{
     color: aqua;
     height: 300px;
 }
+output{
+    background-color: #00695c;
+}
 header img{
     border-width: thick; /* epaisse*/
     border-style: double;

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vérification</title>
+    <script src="controles.js"></script>
+    <link rel="stylesheet" href="mesStyles.css">
+    <style>
+
+        #images {
+    
+    gap: 15px;
+    margin: 35px auto;
+}
+
+
+
+#images img {
+    width: 150px;
+    height: 120px;
+    border: 1px solid #777;
+}
+
+#images input {
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body onload="charger()">
+
+    <h1 id="titre">Choisir les photo qui indiquent <span id="csp"></span></h1>
+<form action="index.html" method="get" onsubmit="return verifConnexion()">
+    <div id="images">
+         <label>
+            <img src="assets/01877497-434e-4cca-b9e8-ea6f012c67eb.jpg" alt="Photo 5">
+            <input type="checkbox" id="chat1">
+        </label>
+
+        <label>
+            <img src="assets/1ae7bf59-38a5-4d44-bc45-01ae96b04c82.jpg" alt="Photo 2">
+            <input type="checkbox" id="chat2">
+        </label>
+
+        <label>
+            <img src="assets/ac507ef5-ebaf-4aff-92c0-7ccf57a6f689.jpg" alt="Photo 3">
+            <input type="checkbox" id="chien1">
+        </label>
+ <label>
+            <img src="assets/5b4c24ce-f555-4c2d-aeaf-3fad158d7551.jpg" alt="Photo 1">
+            <input type="checkbox" id="chat3">
+        </label>
+        <label>
+            <img src="assets/c21dda88-a989-4e35-879e-d19291ed1c70.jpg" alt="Photo 4">
+            <input type="checkbox" id="chien2">
+        </label>
+
+      
+    </div>
+    
+
+    <button type="submit" >Valider</button>
+    </form>
+</body>
+</html>

@@ -28,6 +28,7 @@ function lecture(){
     document.getElementById("vid").style.border = "solid 5px green "
     document.getElementById("lp").innerHTML = "video en cour"
     document.getElementById("lp").style.color = "green"
+    document.getElementById("lp").style.textTransform = "capitalize"
 }
 function PauseVideo(){
     document.getElementById("vid").style.border = "solid 5px red "

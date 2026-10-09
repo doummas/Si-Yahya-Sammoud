@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+button{
+    width: 100px;
+    height: 20px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border-radius: 20%;
+}
+/* index.html*/
+
+*{
+    
+}
+#in_body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+}
+#in_header{
+
+}
