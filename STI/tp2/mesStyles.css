@@ -12,11 +12,95 @@ button{
 /* index.html*/
 
 *{
-    
+    box-sizing: border-box;
 }
 #in_body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    margin: 0;
+    padding: 0;
 }
 #in_header{
+    position: relative;
+    background-color: orange;
+    padding: 20px;
+    height:110px;
+    animation: descender 1s ;
+}
+@keyframes descender {
+    0%{
+        transform: translate(0,-90px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    
+    
+}
 
+header img{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition-property: all;
+    transition-duration: 2s;
+    
+}
+header img:hover{
+    transform: rotate(360deg);
+}
+
+header h1{
+    text-align: center;
+    margin: 0;
+}
+main{
+    height: 500px;
+}
+nav{
+    width: 20%;
+    height: 500px;
+    padding: 10px;
+    float: left;
+}
+section{
+    float: right;
+    width: 70%;
+    height: 500px;
+}
+
+nav ul{
+    padding: 0;
+    list-style-type: none;
+
+}
+nav ul li{
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 50px;
+    border: black 1px;
+    border-radius: 0px 700px;
+    background-color: green;
+    transition-property: all;
+    transition-duration: 0.5s;
+    border-color: black;
+}
+nav ul li:hover{
+    background-color: yellow;
+    border-radius: 700px 0;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+iframe{
+    height: 100%;
+    width: 100%;
 }
