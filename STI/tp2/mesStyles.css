@@ -100,6 +100,22 @@ nav ul li a{
     font-weight: bold;
     display: block;
 }
+footer{
+    background-color: orange;
+    height: 200px;
+}
+#index_p{
+    animation: ena 10s infinite;
+}
+@keyframes ena {
+    0%{
+        transform: translateX(120%);
+    }
+    100%{
+        transform: translateX(-110%);
+    }
+    
+}
 iframe{
     height: 100%;
     width: 100%;
