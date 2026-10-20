@@ -40,3 +40,16 @@ function verifConnexion(){
             
     }
 }}
+
+function jourrestant(){
+    let datee = new Date("2027/01/19") - new Date()
+    let diff = Math.trunc(datee / (1000 * 60 * 60 * 24))
+    if (diff>0){
+    document.getElementById("index_p").innerHTML = "jour restant " + diff
+
+    }
+    else{
+    document.getElementById("index_p").innerHTML = "delai depasse5"
+    }
+    
+}

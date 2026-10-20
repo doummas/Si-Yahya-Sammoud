@@ -102,21 +102,109 @@ nav ul li a{
 }
 footer{
     background-color: orange;
-    height: 200px;
+    height: 100px;
+    position: relative;
+    clear: both;
 }
 #index_p{
+    text-align: center;
     animation: ena 10s infinite;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 @keyframes ena {
     0%{
-        transform: translateX(120%);
+        transform: translate(200%);
     }
     100%{
-        transform: translateX(-110%);
+        transform: translate(-200%,);
     }
     
 }
 iframe{
     height: 100%;
     width: 100%;
+}
+
+
+
+/*aceuil.html*/
+
+#acc{
+    height: 200px;
+    width: 300px;
+    border: double thin green;
+    box-shadow: 2px 3px 5px rgb(245 152 12 );
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition-property:all;
+    transition-duration: 2s;
+}
+#acc:active{
+    transform: skew(-10deg,-20deg);
+}
+
+#titreAccuei{
+    text-align: center;
+}
+l
+figure img{
+    display: block;
+    width: 12px;
+    height: 150px;
+    border-radius: 8px;
+}
+figure{
+    text-align: center;
+    width: 50%;
+    padding: 8px;
+    background-color: #fff;
+    border: 3px solid #1e3c8c;
+    border-radius:10px ;
+    box-shadow: 5px 5px 12px rgb(0 0 0 / 0.35);
+    transition: all 2s  ;
+}
+figure:hover{
+    transform: translate(8px) rotate(-5deg);
+    box-shadow: 10px 14px 22px rgb(0 0 0 / 0.45);
+}
+figcaption{
+    margin-top: 8px;
+    text-align: center;
+    font-style: italic;
+    color: #444;
+}
+/* inscription*/
+
+form{
+    animation-name: aa;
+    animation-duration: 1s;
+}
+@keyframes aa {
+    0%{
+        transform: translate(0,-90px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }}
+
+label{
+    width: 200px;
+}
+input{
+    width: 200px;
+}
+form button{
+    transition:all;
+
+}
+form button:hover{
+    transform: translate(0,-3px);
+    background-color: red;
 }
