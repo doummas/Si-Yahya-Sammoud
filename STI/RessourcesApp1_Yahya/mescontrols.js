@@ -79,7 +79,7 @@ function calculer(){
     }
 function valider(){
     let cin = document.getElementById("cin").value
-    if (cin.length != 8 || (cin.substring(0,2) != "01" && cin.substring(0,2) != "06" ) ){
+    if (cin.length != 8 || (cin.substring(0,2) != "01" && cin.substring(0,2) != "06" ) || !numberr(cin) ){
         alert("Numero Cin Incorrect")
     }
     let nom = document.getElementById("nom").value
@@ -87,7 +87,7 @@ function valider(){
     document.getElementById("nom").value = eliminer_esp(nom)
     console.log(nom)
     
-    if (!lettes(nom) || calculer_espace(nom) > 1){
+    if (!lettes(nom) || calculer_espace(nom) > 1 || nom.indexOf(" ")==1){
         alert("Nom et Prenom sont Incorrect")
     }
     console.log(lettes(nom))
@@ -114,6 +114,13 @@ function valider(){
     if(!document.getElementById("ff").checked && !document.getElementById("mm").checked ){
         alert("Choisir un genre")
     }
+}
+function numberr(ch){
+    let i = 0
+    while(i<ch.length && ((ch[i]>="0" && ch[i]<="9"))){
+        i++
+    }
+    return i==ch.length
 }
 function lettre(ch){
     let i = 0
