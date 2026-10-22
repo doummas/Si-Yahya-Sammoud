@@ -102,10 +102,11 @@ function valider(){
 
 
     let da = document.getElementById("d").value
-    if (da<= "2008-09-13"){
+    let age = new Date().getFullYear()-Number(da.substring(0,4))
+    if (new Date(da)<= new Date("2008-09-13") || age<=18 || da==""){
         alert("Date est Incorrect")
     }
-    if (document.getElementById("select").value == "Choisir un mode"){
+    if (document.getElementById("select").selectedIndex <= 0){
         alert("select est vide")
     }
     if (document.getElementById("p").value == ""){
@@ -124,6 +125,7 @@ function numberr(ch){
 }
 function lettre(ch){
     let i = 0
+
     while(i<ch.length && ((ch[i].toUpperCase()>="A" && ch[i].toUpperCase()<="Z"))){
         i++
     }
