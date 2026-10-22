@@ -115,6 +115,24 @@ function valider(){
     if(!document.getElementById("ff").checked && !document.getElementById("mm").checked ){
         alert("Choisir un genre")
     }
+    let cap = document.getElementById("captcha").value
+    let rep = document.getElementById("rep").value
+    console.log(pair(cap))
+    console.log(rep)
+
+    if (rep!=pair(cap)){
+        alert("captcha incorrect")
+    }
+
+function pair(ch){
+    let pai=0
+    for (let i=0;i<String(ch).length;i++){
+        if (Number(ch[i] % 2) == 0){
+            pai+=1
+        }
+    }
+    return pai
+}
 }
 function numberr(ch){
     let i = 0
@@ -164,7 +182,13 @@ function eliminer_esp(ch){
     return ch
 }
    
+function generer(){
+    for (let i =0;i<8;i++){
+        document.getElementById("captcha").value +=Math.round(Math.random()*9)
+    }
+    
 
+}
     
 
 
