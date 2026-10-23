@@ -49,7 +49,16 @@ function jourrestant(){
 
     }
     else{
-    document.getElementById("index_p").innerHTML = "delai depasse5"
+    document.getElementById("index_p").innerHTML = "delai depasse"
     }
     
+}
+
+
+function genererCaptch(){
+    let tab = ["BONJOUR","CLAVIER","ORDINATEUR","PROGRAMME","INFORMATIQUE","ALGORYTHME","JAVASCRIPT"]
+    let al = Math.round(1+Math.random()*4)
+    let out= document.getElementById("captcha")
+    let c=tab[Math.round(Math.random)*7]
+
 }

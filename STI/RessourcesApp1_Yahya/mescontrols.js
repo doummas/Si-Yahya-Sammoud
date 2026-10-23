@@ -127,7 +127,7 @@ function valider(){
 function pair(ch){
     let pai=0
     for (let i=0;i<String(ch).length;i++){
-        if (Number(ch[i] % 2) == 0){
+        if ((ch[i] % 2) == 0){
             pai+=1
         }
     }
