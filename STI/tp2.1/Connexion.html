@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Connexion</title>
+  <style>
+    fieldset {
+  border: 1px solid #5b7c99;
+  padding: 12px 18px;
+  height: 200px;
+}
+legend {
+  padding: 0 6px;
+}
+
+
+
+#user {
+  border: 2px solid #333;
+  border-radius: 4px;
+  padding: 3px;
+  margin-bottom: 20px;
+}
+
+/* Zone d'affichage du captcha */
+#out {
+  display: inline-block;
+  min-width: 70px;
+  padding: 4px 6px;
+  background: #19e6e6;
+  border: 2px solid #e03030;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+
+
+
+
+  </style>
+  <script src="controles.js"></script>
+</head>
+<body  onload="generer()">
+
+  <form  action="Location.html" onsubmit="return verif1()" >
+    <fieldset>
+      <legend>Connexion</legend>
+
+      <div>
+        <label for="user">User Name:</label>
+        <input type="text" id="user" name="user"  >
+        <span id="msgUser" class="erreur"></span>
+      </div>
+
+      <div>
+        <label>Code Captcha:</label>
+        
+        <output id="out" name="out"></output>
+        <input type="text" id="result" name="result"  placeholder="Taper votre réponse" onblur="verifier()" >
+        <input type="button" value="Actualiser"  onclick="refrech()"><br> <audio src="incorrecte.mp3" controls ></audio>
+        <input type="submit" name="bt" id="btnverifier" value="Vérifier" >
+      
+      </div>
+    </fieldset>
+  </form>
+
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Location</title>
+  <style>
+    fieldset {
+  border: 1px solid #5b7c99;
+  padding: 12px 18px;
+  height: 200px;
+}
+legend {
+  padding: 0 6px;
+}
+
+
+
+
+
+
+
+/* Page Location : formulaire + publicité vidéo (float) */
+
+.champs {
+  float: left;
+  width: 50%;
+   height: 100%;
+}
+.pub {
+  float: right;
+  width: 50%;
+  padding-left: 20px;
+  box-sizing: border-box;
+  height: 100%;
+}
+.boutonsVideo button {
+  cursor: pointer;
+  padding: 4px 10px;
+}
+.boutonsVideo img {
+  vertical-align: middle;
+}
+
+  </style>
+  <script src="controles.js"></script>
+</head>
+<body class="page-interne" >
+
+  <p id="msgAcces" class="erreur"></p>
+
+  <div id="contenuLocation" >
+    <form id="frmLocation" onsubmit="return false" >
+      <fieldset>
+        <legend>Location d'un équipement</legend>
+
+        <div class="ligneLoc">
+          <div class="champs">
+            <p>
+              <label for="codeClient">Code Client:</label>
+              <input type="text" id="codeClient" name="codeClient" maxlength="8">
+            </p>
+
+            <p>
+              <label for="equip">Equipement :</label>
+              <select id="equip" name="equip" onchange="calculerPrix()">
+                <option value="">Choisir un équipement</option>
+                <option value="20">Pédalo - 20 DT/h</option>
+                <option value="60">Jet ski - 60 DT/h</option>
+                <option value="80">Parachute - 80 DT/h</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="dateLoc">Date de location:</label>
+              <input type="date" id="dateLoc" name="dateLoc">
+            </p>
+
+            <p>
+              Mode de payement:
+              <label><input type="radio" name="paiement" value="espece"> Espèce</label>
+              <label><input type="radio" name="paiement" value="carte"> Carte de crédit</label>
+            </p>
+
+            <p>
+              <input type="button" id="btnValider" value="Valider" onclick="valider()">
+              <input type="reset" id="btnAnnuler" value="Annuler">
+            </p>
+            <p id="msgLoc" class="erreur"></p>
+          </div>
+
+          <!-- Publicité vidéo à côté de la liste déroulante -->
+          <div class="pub">
+            <video id="pub" width="260"  onplay="promotion()"
+       onpause="pausePub()" controls>
+              <source src="pub.mp4" type="video/mp4">
+            </video><br> <span id="msgPromo"></span>
+            <div class="boutonsVideo">
+              <button type="button" id="btnPlay" onclick="document.getElementById('pub').play()" >
+                <img src="play.png" alt="" width="16"> Play
+              </button>
+              <button type="button" id="btnPause" onclick="document.getElementById('pub').pause()">
+                <img src="pause.png" alt="" width="16"> Pause
+              </button>
+              <br>
+              <span id="res"></span>
+            </div>
+            
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+</body>
+</html>
