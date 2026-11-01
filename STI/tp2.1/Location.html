@@ -49,7 +49,7 @@ legend {
   <p id="msgAcces" class="erreur"></p>
 
   <div id="contenuLocation" >
-    <form id="frmLocation" onsubmit="return false" >
+    <form id="frmLocation" action="#" onsubmit="return valider()" >
       <fieldset>
         <legend>Location d'un équipement</legend>
 
@@ -62,7 +62,7 @@ legend {
 
             <p>
               <label for="equip">Equipement :</label>
-              <select id="equip" name="equip" onchange="calculerPrix()">
+              <select id="equip" name="equip" onchange="">
                 <option value="">Choisir un équipement</option>
                 <option value="20">Pédalo - 20 DT/h</option>
                 <option value="60">Jet ski - 60 DT/h</option>
@@ -82,7 +82,7 @@ legend {
             </p>
 
             <p>
-              <input type="button" id="btnValider" value="Valider" onclick="valider()">
+              <input type="submit" id="btnValider" value="Valider" >
               <input type="reset" id="btnAnnuler" value="Annuler">
             </p>
             <p id="msgLoc" class="erreur"></p>
@@ -90,15 +90,15 @@ legend {
 
           <!-- Publicité vidéo à côté de la liste déroulante -->
           <div class="pub">
-            <video id="pub" width="260"  onplay="promotion()"
-       onpause="pausePub()" controls>
-              <source src="pub.mp4" type="video/mp4">
+            <video id="pub" width="260"  onplay=""
+       onpause="" controls>
+              <source src="" type="video/mp4">
             </video><br> <span id="msgPromo"></span>
             <div class="boutonsVideo">
-              <button type="button" id="btnPlay" onclick="document.getElementById('pub').play()" >
-                <img src="play.png" alt="" width="16"> Play
+              <button type="button" id="btnPlay" onclick="" >
+                <img src="" alt="" width="16"> Play
               </button>
-              <button type="button" id="btnPause" onclick="document.getElementById('pub').pause()">
+              <button type="button" id="btnPause" onclick="">
                 <img src="pause.png" alt="" width="16"> Pause
               </button>
               <br>

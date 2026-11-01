@@ -39,7 +39,7 @@ function generer(){
     }
     console.log(t1)
     console.log(t2)
-    document.getElementById("out").innerHTML = t1[Math.round(Math.random()*5)]
+    document.getElementById("out").innerHTML = t1[Math.round(Math.random()*4)]
 }
 function verifier(){
     let out = document.getElementById("out").innerHTML
@@ -54,6 +54,50 @@ function verifier(){
 }
 
 function refrech(){
-    document.getElementById("out").innerHTML = t1[Math.round(Math.random()*20)]
+    document.getElementById("out").innerHTML = t1[Math.round(Math.random()*4)]
 }
+
+
+function valider(){
+    let cin = document.getElementById("codeClient").value
+    if (cin.length!=8){
+        alert("Cin Incorrect")
+        return false
+    }
+    let equi = document.getElementById("equip")
+    if (equi.selectedIndex == -1 || equi.selectedIndex == 0){
+        alert("Select equipment")
+        return false
+    }
     
+    let date = (document.getElementById("dateLoc").value)
+    let date1 = new Date(date)
+    console.log(date1)
+    if (date1 == "" || (date <("2026-04-01") )){
+        alert('Date incorrect')
+        return false
+    }
+    let pai= document.getElementsByName("paiement")
+    let val = ""
+    for (let i =0;i<2;i++){
+        if(pai[i].checked){
+            val = pai[i].value
+        }
+        
+    }
+    alert(val)
+    if (val == ""){
+        alert("Paiment incorrect")
+        return false
+    }
+}
+function alea(){
+    
+    let t=["parachute.jpg","pause.png","pedalo.jpg"]
+    document.getElementById("im").src = t[Math.round(Math.random()*2)] 
+    console.log(t[Math.round(Math.random()*2)] )
+
+
+
+
+} 
