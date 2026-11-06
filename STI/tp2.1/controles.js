@@ -78,7 +78,7 @@ function valider(){
         return false
     }
     let pai= document.getElementsByName("paiement")
-    let val = ""
+    val = ""
     for (let i =0;i<2;i++){
         if(pai[i].checked){
             val = pai[i].value
@@ -101,3 +101,36 @@ function alea(){
 
 
 } 
+
+function vall(){
+    let pai= document.getElementsByName("paiement")
+    val = ""
+    for (let i =0;i<3;i++){
+        if(pai[i].checked){
+            val = pai[i].value
+        }
+        
+    }
+    console.log(val)
+}
+
+function playy(){
+    promotion = true
+    tota()
+}
+
+function pausee(){
+    promotion = false
+    tota()
+}
+
+function tota(){
+    console.log(String(val*0.8))
+    if (promotion){  
+        document.getElementById('tot').innerHTML = String(val*0.8)
+    }
+    else{
+        document.getElementById('tot').innerHTML = String(val)
+    }
+
+}

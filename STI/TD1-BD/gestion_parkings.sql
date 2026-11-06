@@ -1,0 +1,14 @@
+
+CREATE TABLE VOITURE (
+  ImmatVoit VARCHAR(11) PRIMARY KEY,
+  CarVoit   VARCHAR(30)
+);
+
+CREATE TABLE PARKING (
+  NumPark   INT(3) PRIMARY KEY,
+  NomPark   VARCHAR(20) NOT NULL UNIQUE,
+  AdrPark   VARCHAR(50) NOT NULL,
+  Capacite  INT(2),
+  TarifHeur DECIMAL(6,2)
+);
+

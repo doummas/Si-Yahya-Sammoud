@@ -2,7 +2,7 @@
 
 header{
   width: 70%;
-  background-color: rgb(87, 148, 75);
+  background-color: rgb(87, 148, 75 , 0.7);
   float: left;
   border-radius: 10%;
 
@@ -12,13 +12,15 @@ header h1{
   color: aqua;
   transition-duration: 3s;
   transition-property: all;
+  position: relative;
+  bottom: 38px;
 }
 header h1:hover{
   transform: rotate(8deg);
   transform: translate(-50px,0);
 }
 nav{
-  background-color: rgb(192, 234, 27);
+  background-color: rgb(192, 234, 27, 0.7);
   width: 27%;
   height: 98px;
   float: right;
@@ -28,7 +30,7 @@ nav{
 section{
 width: 70%;
 height: 400px;
-background-color: rgb(17, 209, 193);
+background-color: rgb(17, 209, 193, 0.7);
 position: relative;
 top: 120px;
 border-radius: 10%;
@@ -39,7 +41,7 @@ section iframe{
   height: 100%;
 }
 aside{
-  background-color: rgb(234, 203, 27);
+  background-color: rgb(234, 203, 27, 0.7);
   width: 27%;
   height: 400px;
   float: right;
@@ -53,8 +55,8 @@ aside img{
   width: 200px;
   height: 200px;
   position: absolute;
-  top: 30%;
-  left: 30%;
+  top: 5%;
+  left: 50%;
   transform: translate(-50%,50%);
   border-radius: 8px;
   transition-duration: 2s;

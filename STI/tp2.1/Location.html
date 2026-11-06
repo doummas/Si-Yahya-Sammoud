@@ -62,7 +62,7 @@ legend {
 
             <p>
               <label for="equip">Equipement :</label>
-              <select id="equip" name="equip" onchange="">
+              <select id="equip" name="equip" onchange="vall()" >
                 <option value="">Choisir un équipement</option>
                 <option value="20">Pédalo - 20 DT/h</option>
                 <option value="60">Jet ski - 60 DT/h</option>
@@ -80,6 +80,7 @@ legend {
               <label><input type="radio" name="paiement" value="espece"> Espèce</label>
               <label><input type="radio" name="paiement" value="carte"> Carte de crédit</label>
             </p>
+            
 
             <p>
               <input type="submit" id="btnValider" value="Valider" >
@@ -90,19 +91,20 @@ legend {
 
           <!-- Publicité vidéo à côté de la liste déroulante -->
           <div class="pub">
-            <video id="pub" width="260"  onplay=""
-       onpause="" controls>
+            <video id="pub" width="260"  onplay="alert('Felicictation! Vous benificiez d une reduction de 20% ');playy()" src="749991ee-f27b-4fef-a608-92168cc6e055.mp4"
+       onpause="alert('Votre promotion est annuler'); pausee()" controls>
               <source src="" type="video/mp4">
             </video><br> <span id="msgPromo"></span>
             <div class="boutonsVideo">
-              <button type="button" id="btnPlay" onclick="" >
+              <button type="button" id="btnPlay" onclick="document.getElementById('pub').play()" >
                 <img src="" alt="" width="16"> Play
               </button>
-              <button type="button" id="btnPause" onclick="">
+              <button type="button" id="btnPause" onclick="document.getElementById('pub').pause()">
                 <img src="pause.png" alt="" width="16"> Pause
               </button>
+              <output id="res" onmouseover="tota()">Paiement totale : <span id="tot" ></span></output>
               <br>
-              <span id="res"></span>
+              
             </div>
             
           </div>
