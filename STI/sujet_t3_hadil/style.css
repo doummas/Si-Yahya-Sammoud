@@ -1,0 +1,28 @@
+header{
+    background-image: url(1.jpg);
+    background-size: 80px;
+    background-repeat: repeat-x;
+}
+summary{
+    background-color: aquamarine;
+    width: 80px;
+    border-radius: 10%;
+}
+a{
+    background-color: rgb(179, 212, 59);
+    width: 80px;
+    border-radius: 10%;
+}
+
+
+
+/**/
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+p{
+    text-transform: capitalize;
+}
