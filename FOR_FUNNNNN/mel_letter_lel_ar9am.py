@@ -4,7 +4,7 @@ def n_list():
     list2 =[ "ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"]
     
 def think():
-    number = input("Choose an number between 0 and 9999 in letter\n")
+    number = input("Choose an number between 0 and 99999 in letter\n")
     if number in list2:
         i=0
         while i<len(list2) and list2[i]!=number :
