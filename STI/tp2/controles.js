@@ -141,5 +141,5 @@ function pair(cin){
             p+=ch[i]
         }
     }
-    return p>1
+    return p>1   
 }
